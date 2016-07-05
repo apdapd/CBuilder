@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<TfrxReport Version="4.12.13" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="42546,4988744329" ReportOptions.Description.Text="" ReportOptions.LastChange="42548,5817406019" ScriptLanguage="PascalScript" ScriptText.Text="&#13;&#10;begin&#13;&#10;&#13;&#10;end." PropData="044C65667403E00103546F7003E0010844617461736574730101062C20446174615365743D22667278444244617461736574312220446174615365744E616D653D2247726F7570220000095661726961626C65730100055374796C650100">
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" PaperWidth="210" PaperHeight="297" PaperSize="9" LeftMargin="10" RightMargin="10" TopMargin="10" BottomMargin="10" ColumnWidth="0" ColumnPositions.Text="" HGuides.Text="" VGuides.Text="">
+    <TfrxReportTitle Name="ReportTitle1" Height="22,67718" Left="0" Top="18,89765" Width="718,1107"/>
+    <TfrxMasterData Name="MasterData1" Height="22,67718" Left="0" Top="147,40167" Width="718,1107" ColumnWidth="0" ColumnGap="0" DataSet="frxDBDataset1" DataSetName="Group" RowCount="0">
+      <TfrxMemoView Name="frxDBDataset1AMOUNT" Left="139,84261" Top="0" Width="102,04731" Height="18,89765" ShowHint="False" DataField="AMOUNT" DataSet="frxDBDataset1" DataSetName="Group" Text="[Group.&#34;AMOUNT&#34;]"/>
+      <TfrxMemoView Name="frxDBDataset1PAY" Left="313,70099" Top="0" Width="94,48825" Height="18,89765" ShowHint="False" DataField="PAY" DataSet="frxDBDataset1" DataSetName="Group" Text="[Group.&#34;PAY&#34;]"/>
+      <TfrxMemoView Name="frxDBDataset1SCPAY" Left="423,30736" Top="0" Width="79,37013" Height="18,89765" ShowHint="False" DataField="SCPAY" DataSet="frxDBDataset1" DataSetName="Group" Text="[Group.&#34;SCPAY&#34;]"/>
+      <TfrxMemoView Name="frxDBDataset1KIND" Left="525,35467" Top="3,77953" Width="192,75603" Height="18,89765" ShowHint="False" DataField="KINDNAME" DataSet="frxDBDataset1" DataSetName="Group" Text="[Group.&#34;KINDNAME&#34;]"/>
+    </TfrxMasterData>
+    <TfrxPageFooter Name="PageFooter1" Height="22,67718" Left="0" Top="275,90569" Width="718,1107">
+      <TfrxMemoView Name="Memo1" Left="642,5201" Top="0" Width="75,5906" Height="18,89765" ShowHint="False" HAlign="haRight" Text="[Page#]"/>
+    </TfrxPageFooter>
+    <TfrxGroupHeader Name="GroupHeader1" Height="22,67718" Left="0" Top="102,04731" Width="718,1107" Condition="Group.&#34;DEPART&#34;">
+      <TfrxMemoView Name="frxDBDataset1DEPART" Left="49,13389" Top="0" Width="79,37013" Height="18,89765" ShowHint="False" DataField="DEPART" DataSet="frxDBDataset1" DataSetName="Group" Text="[Group.&#34;DEPART&#34;]"/>
+      <TfrxMemoView Name="Memo4" Left="11,33859" Top="0" Width="30,23624" Height="18,89765" ShowHint="False" Text="ТРК"/>
+    </TfrxGroupHeader>
+    <TfrxGroupFooter Name="GroupFooter1" Height="22,67718" Left="0" Top="192,75603" Width="718,1107">
+      <TfrxMemoView Name="Memo2" Left="136,06308" Top="0" Width="105,82684" Height="18,89765" ShowHint="False" Text="[SUM(&#60;Group.&#34;AMOUNT&#34;&#62;,MasterData1)]"/>
+      <TfrxMemoView Name="Memo5" Left="11,33859" Top="0" Width="49,13389" Height="18,89765" ShowHint="False" Text="Итого"/>
+      <TfrxMemoView Name="Memo3" Left="313,70099" Top="0" Width="94,48825" Height="18,89765" ShowHint="False" Text="[SUM(&#60;Group.&#34;PAY&#34;&#62;,MasterData1)]"/>
+    </TfrxGroupFooter>
+  </TfrxReportPage>
+</TfrxReport>
